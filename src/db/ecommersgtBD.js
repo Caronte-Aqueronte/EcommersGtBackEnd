@@ -99,7 +99,7 @@ db.articulos.insert(
             descripcion: 'Pelota marca Wonder para Baseball, cuero, blanca',
             imagen: {
                 nombreArchivo: 'file - 1682025065762.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682025065762.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682025065762.jpeg',
                 fechaSubida: '1682024919692'
             },
             precio: 99.99,
@@ -112,7 +112,7 @@ db.articulos.insert(
             descripcion: 'Bat para Baseball, marca Willson, color negro',
             imagen: {
                 nombreArchivo: 'file - 1682025491831.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682025491831.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682025491831.jpeg',
                 fechaSubida: '1682025265676'
             },
             precio: 199.99,
@@ -125,7 +125,7 @@ db.articulos.insert(
             descripcion: 'Control Xbox, Color rojo',
             imagen: {
                 nombreArchivo: 'file - 1682026035076.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682026035076.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682026035076.jpeg',
                 fechaSubida: '1682025993921'
             },
             precio: 300,
@@ -138,7 +138,7 @@ db.articulos.insert(
             descripcion: 'Iphone 12 pro max, color azul',
             imagen: {
                 nombreArchivo: 'file - 1682026157029.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682026157029.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682026157029.jpeg',
                 fechaSubida: '1682025993921'
             },
             precio: 3000,
@@ -151,7 +151,7 @@ db.articulos.insert(
             descripcion: 'Lavadora Wirlpool automatica, color blanco',
             imagen: {
                 nombreArchivo: 'file - 1682026254156.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682026254156.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682026254156.jpeg',
                 fechaSubida: '1682025993921'
             },
             precio: 10000,
@@ -164,7 +164,7 @@ db.articulos.insert(
             descripcion: 'Samsung S22 color rosado',
             imagen: {
                 nombreArchivo: 'file - 1682026283053.png',
-                archivoUrl: 'http://localhost:8080/file - 1682026283053.png',
+                archivoUrl: 'http://localhost:3000/file - 1682026283053.png',
                 fechaSubida: '1682025993921'
             },
             precio: 4000,
@@ -177,7 +177,7 @@ db.articulos.insert(
             descripcion: 'Nintendo Switch, Lite, Color rosado',
             imagen: {
                 nombreArchivo: 'file - 1682026318420.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682026318420.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682026318420.jpeg',
                 fechaSubida: '1682025993921'
             },
             precio: 4000,
@@ -190,7 +190,7 @@ db.articulos.insert(
             descripcion: 'Tarjeta Xbox Game Pass, por un mes',
             imagen: {
                 nombreArchivo: 'file - 1682026351822.png',
-                archivoUrl: 'http://localhost:8080/file - 1682026351822.png',
+                archivoUrl: 'http://localhost:3000/file - 1682026351822.png',
                 fechaSubida: '1682025993921'
             },
             precio: 50,
@@ -203,7 +203,7 @@ db.articulos.insert(
             descripcion: 'Play Station 5, Discos fisicos, 1000GB',
             imagen: {
                 nombreArchivo: 'file - 1682026456813.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682026456813.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682026456813.jpeg',
                 fechaSubida: '1682025993921'
             },
             precio: 7000,
@@ -216,7 +216,7 @@ db.articulos.insert(
             descripcion: 'Control para play 5, color negro, 1ra generacion',
             imagen: {
                 nombreArchivo: 'file - 1682026541661.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682026541661.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682026541661.jpeg',
                 fechaSubida: '1682025993921'
             },
             precio: 500,
@@ -234,7 +234,7 @@ db.articulos.insert([
         descripcion: 'Cafetera Black&Decker, Color negro',
         imagen: {
             nombreArchivo: 'file - 1682027265302.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682027265302.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682027265302.jpeg',
             fechaSubida: '1682026680477'
         },
         precio: 500,
@@ -247,7 +247,7 @@ db.articulos.insert([
         descripcion: 'Refrigeradora Oster, Color gris',
         imagen: {
             nombreArchivo: 'file - 1682028132832.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682028132832.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682028132832.jpeg',
             fechaSubida: '1682026680477'
         },
         precio: 6000,
@@ -260,7 +260,7 @@ db.articulos.insert([
         descripcion: 'Armario DELUXE, dos puertas, madera',
         imagen: {
             nombreArchivo: 'file - 1682028229222.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682028229222.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682028229222.jpeg',
             fechaSubida: '1682028155130'
         },
         precio: 1000,
@@ -273,7 +273,7 @@ db.articulos.insert([
         descripcion: 'Sillon Zen, color gris',
         imagen: {
             nombreArchivo: 'file - 1682028323054.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682028323054.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682028323054.jpeg',
             fechaSubida: '1682028251214'
         },
         precio: 600,
@@ -286,7 +286,7 @@ db.articulos.insert([
         descripcion: 'Silla Giratoria, empresarial',
         imagen: {
             nombreArchivo: 'file - 1682028488574.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682028488574.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682028488574.jpeg',
             fechaSubida: '1682028406237'
         },
         precio: 300,
@@ -299,7 +299,7 @@ db.articulos.insert([
         descripcion: 'Florero de vidrio tipo gota',
         imagen: {
             nombreArchivo: 'file - 1682028704118.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682028704118.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682028704118.jpeg',
             fechaSubida: '1682028406237'
         },
         precio: 100,
@@ -312,7 +312,7 @@ db.articulos.insert([
         descripcion: 'Vaso de vidrio, 250 ml',
         imagen: {
             nombreArchivo: 'file - 1682029023910.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682029023910.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682029023910.jpeg',
             fechaSubida: '1682028742475'
         },
         precio: 25,
@@ -326,7 +326,7 @@ db.articulos.insert([
         descripcion: 'Copa de vino, 250 ml',
         imagen: {
             nombreArchivo: 'file - 1682029574518.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682029574518.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682029574518.jpeg',
             fechaSubida: '1682029318918'
         },
         precio: 20,
@@ -341,7 +341,7 @@ db.articulos.insert([
         descripcion: 'Pichel 2lts, color rojo',
         imagen: {
             nombreArchivo: 'file - 1682029842510.png',
-            archivoUrl: 'http://localhost:8080/file - 1682029842510.png',
+            archivoUrl: 'http://localhost:3000/file - 1682029842510.png',
             fechaSubida: '1682029786472'
         },
         precio: 5,
@@ -356,7 +356,7 @@ db.articulos.insert([
         descripcion: 'Tazón de acero inoxidable',
         imagen: {
             nombreArchivo: 'file - 1682029910574.png',
-            archivoUrl: 'http://localhost:8080/file - 1682029910574.png',
+            archivoUrl: 'http://localhost:3000/file - 1682029910574.png',
             fechaSubida: '1682029786472'
         },
         precio: 128,
@@ -376,7 +376,7 @@ db.articulos.insert(
             descripcion: 'Lapiz Vplus de grafito',
             imagen: {
                 nombreArchivo: 'file - 1682030088357.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030088357.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030088357.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 5,
@@ -391,7 +391,7 @@ db.articulos.insert(
             descripcion: 'Borrador Mapped',
             imagen: {
                 nombreArchivo: 'file - 1682030114326.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030114326.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030114326.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 5,
@@ -406,7 +406,7 @@ db.articulos.insert(
             descripcion: 'Crayones Mapped, 24 colores',
             imagen: {
                 nombreArchivo: 'file - 1682030156477.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030156477.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030156477.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 60,
@@ -421,7 +421,7 @@ db.articulos.insert(
             descripcion: 'Rapidorgrafo 0.1',
             imagen: {
                 nombreArchivo: 'file - 1682030202485.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030202485.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030202485.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 20,
@@ -436,7 +436,7 @@ db.articulos.insert(
             descripcion: '2 escuadras, 1 transportador, 1 compas',
             imagen: {
                 nombreArchivo: 'file - 1682030273846.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030273846.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030273846.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 50,
@@ -451,7 +451,7 @@ db.articulos.insert(
             descripcion: 'Mochila Movu color azul',
             imagen: {
                 nombreArchivo: 'file - 1682030318668.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030318668.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030318668.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 500,
@@ -466,7 +466,7 @@ db.articulos.insert(
             descripcion: 'Cartuchera rosada, 1 compartimiento',
             imagen: {
                 nombreArchivo: 'file - 1682030444453.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030444453.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030444453.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 50,
@@ -481,7 +481,7 @@ db.articulos.insert(
             descripcion: 'Cuaderno Arimany, amarillo, 250 paginas',
             imagen: {
                 nombreArchivo: 'file - 1682030520604.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030520604.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030520604.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 30,
@@ -496,7 +496,7 @@ db.articulos.insert(
             descripcion: 'Lonchera Among Us, un compartimiento',
             imagen: {
                 nombreArchivo: 'file - 1682030585918.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030585918.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030585918.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 200,
@@ -511,7 +511,7 @@ db.articulos.insert(
             descripcion: 'Folder Kikomo expandible',
             imagen: {
                 nombreArchivo: 'file - 1682030707134.jpeg',
-                archivoUrl: 'http://localhost:8080/file - 1682030707134.jpeg',
+                archivoUrl: 'http://localhost:3000/file - 1682030707134.jpeg',
                 fechaSubida: '1682029947929'
             },
             precio: 25,
@@ -533,7 +533,7 @@ db.articulos.insert(
             descripcion: 'Libro el buen cirujano pasta dura',
             imagen: {
                 nombreArchivo: 'file - 1682031309866.webp',
-                archivoUrl: 'http://localhost:8080/file - 1682031309866.webp',
+                archivoUrl: 'http://localhost:3000/file - 1682031309866.webp',
                 fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -548,7 +548,7 @@ db.articulos.insert(
             descripcion: 'Por Lauren Grant',
             imagen: {
               nombreArchivo: 'file - 1682031419339.jpeg',
-              archivoUrl: 'http://localhost:8080/file - 1682031419339.jpeg',
+              archivoUrl: 'http://localhost:3000/file - 1682031419339.jpeg',
               fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -563,7 +563,7 @@ db.articulos.insert(
             descripcion: 'Por Anthony Burguess',
             imagen: {
               nombreArchivo: 'file - 1682031463420.jpeg',
-              archivoUrl: 'http://localhost:8080/file - 1682031463420.jpeg',
+              archivoUrl: 'http://localhost:3000/file - 1682031463420.jpeg',
               fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -578,7 +578,7 @@ db.articulos.insert(
             descripcion: 'Por Joe Chamber',
             imagen: {
               nombreArchivo: 'file - 1682031511661.jpeg',
-              archivoUrl: 'http://localhost:8080/file - 1682031511661.jpeg',
+              archivoUrl: 'http://localhost:3000/file - 1682031511661.jpeg',
               fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -593,7 +593,7 @@ db.articulos.insert(
             descripcion: 'Por John Haywood',
             imagen: {
               nombreArchivo: 'file - 1682031565237.jpeg',
-              archivoUrl: 'http://localhost:8080/file - 1682031565237.jpeg',
+              archivoUrl: 'http://localhost:3000/file - 1682031565237.jpeg',
               fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -608,7 +608,7 @@ db.articulos.insert(
             descripcion: 'Por: Jose Enrique Exposito',
             imagen: {
               nombreArchivo: 'file - 1682031621702.jpeg',
-              archivoUrl: 'http://localhost:8080/file - 1682031621702.jpeg',
+              archivoUrl: 'http://localhost:3000/file - 1682031621702.jpeg',
               fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -623,7 +623,7 @@ db.articulos.insert(
             descripcion: 'Por: Haper Lee',
             imagen: {
               nombreArchivo: 'file - 1682031740070.webp',
-              archivoUrl: 'http://localhost:8080/file - 1682031740070.webp',
+              archivoUrl: 'http://localhost:3000/file - 1682031740070.webp',
               fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -638,7 +638,7 @@ db.articulos.insert(
             descripcion: 'Por Italo Calvino',
             imagen: {
               nombreArchivo: 'file - 1682031857589.jpeg',
-              archivoUrl: 'http://localhost:8080/file - 1682031857589.jpeg',
+              archivoUrl: 'http://localhost:3000/file - 1682031857589.jpeg',
               fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -653,7 +653,7 @@ db.articulos.insert(
             descripcion: 'Por Carmen González',
             imagen: {
               nombreArchivo: 'file - 1682031915692.jpeg',
-              archivoUrl: 'http://localhost:8080/file - 1682031915692.jpeg',
+              archivoUrl: 'http://localhost:3000/file - 1682031915692.jpeg',
               fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -668,7 +668,7 @@ db.articulos.insert(
             descripcion: 'Por Victoria Aveyard',
             imagen: {
               nombreArchivo: 'file - 1682032293374.jpeg',
-              archivoUrl: 'http://localhost:8080/file - 1682032293374.jpeg',
+              archivoUrl: 'http://localhost:3000/file - 1682032293374.jpeg',
               fechaSubida: '1682031108563'
             },
             precio: 200,
@@ -690,7 +690,7 @@ db.articulos.insert(
           descripcion: 'Color Aqua',
           imagen: {
             nombreArchivo: 'file - 1682032801391.webp',
-            archivoUrl: 'http://localhost:8080/file - 1682032801391.webp',
+            archivoUrl: 'http://localhost:3000/file - 1682032801391.webp',
             fechaSubida: '1682031108563'
           },
           precio: 200,
@@ -705,7 +705,7 @@ db.articulos.insert(
           descripcion: 'Camisa a cuadros CAT, rojo y gris',
           imagen: {
             nombreArchivo: 'file - 1682032840621.webp',
-            archivoUrl: 'http://localhost:8080/file - 1682032840621.webp',
+            archivoUrl: 'http://localhost:3000/file - 1682032840621.webp',
             fechaSubida: '1682031108563'
           },
           precio: 300,
@@ -720,7 +720,7 @@ db.articulos.insert(
           descripcion: 'Camisa SIman Negra',
           imagen: {
             nombreArchivo: 'file - 1682032864717.webp',
-            archivoUrl: 'http://localhost:8080/file - 1682032864717.webp',
+            archivoUrl: 'http://localhost:3000/file - 1682032864717.webp',
             fechaSubida: '1682031108563'
           },
           precio: 300,
@@ -735,7 +735,7 @@ db.articulos.insert(
           descripcion: 'Pantalon Texora color cafe',
           imagen: {
             nombreArchivo: 'file - 1682032907108.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682032907108.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682032907108.jpeg',
             fechaSubida: '1682031108563'
           },
           precio: 200,
@@ -750,7 +750,7 @@ db.articulos.insert(
           descripcion: 'Pantalon Progresiva, lona zul',
           imagen: {
             nombreArchivo: 'file - 1682032939312.webp',
-            archivoUrl: 'http://localhost:8080/file - 1682032939312.webp',
+            archivoUrl: 'http://localhost:3000/file - 1682032939312.webp',
             fechaSubida: '1682031108563'
           },
           precio: 300,
@@ -765,7 +765,7 @@ db.articulos.insert(
           descripcion: 'Pantalon Outdoor para hombre color gris',
           imagen: {
             nombreArchivo: 'file - 1682033046149.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682033046149.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682033046149.jpeg',
             fechaSubida: '1682031108563'
           },
           precio: 200,
@@ -780,7 +780,7 @@ db.articulos.insert(
           descripcion: 'Gorra BMW color negro Marca Puma',
           imagen: {
             nombreArchivo: 'file - 1682033083956.jpeg',
-            archivoUrl: 'http://localhost:8080/file - 1682033083956.jpeg',
+            archivoUrl: 'http://localhost:3000/file - 1682033083956.jpeg',
             fechaSubida: '1682031108563'
           },
           precio: 100,
@@ -795,7 +795,7 @@ db.articulos.insert(
           descripcion: 'Gorra LA color azul',
           imagen: {
             nombreArchivo: 'file - 1682033146428.webp',
-            archivoUrl: 'http://localhost:8080/file - 1682033146428.webp',
+            archivoUrl: 'http://localhost:3000/file - 1682033146428.webp',
             fechaSubida: '1682031108563'
           },
           precio: 200,
@@ -810,7 +810,7 @@ db.articulos.insert(
           descripcion: 'Lentes Ray Ban, polarizado negro',
           imagen: {
             nombreArchivo: 'file - 1682033188428.webp',
-            archivoUrl: 'http://localhost:8080/file - 1682033188428.webp',
+            archivoUrl: 'http://localhost:3000/file - 1682033188428.webp',
             fechaSubida: '1682031108563'
           },
           precio: 200,
@@ -825,7 +825,7 @@ db.articulos.insert(
           descripcion: 'Botas CAT, para trabajo, color cafe',
           imagen: {
             nombreArchivo: 'file - 1682033242286.webp',
-            archivoUrl: 'http://localhost:8080/file - 1682033242286.webp',
+            archivoUrl: 'http://localhost:3000/file - 1682033242286.webp',
             fechaSubida: '1682031108563'
           },
           precio: 400,
