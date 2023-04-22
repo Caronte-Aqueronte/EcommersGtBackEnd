@@ -3,6 +3,7 @@ const mongoose = require('mongoose');//iniciar mongoose
 const usuarioRoutes = require('./routes/usuario.routes');
 const articuloRoutes = require('./routes/articulo.routes');
 const carritoRoutes = require('./routes/carrito.routes');
+const tarjetaRoutes = require('./routes/tarjeta.routes');
 const cors = require("cors");
 const path = require("path");
 const bodyParser = require('body-parser');
@@ -43,6 +44,6 @@ start();//llamamos la funcion
 app.use('/usuario', usuarioRoutes);//las rutas para los usuarios seran leidas desde localost/usuario/
 app.use('/articulo', articuloRoutes);//las rutas para los usuarios seran leidas desde localost/articulo/
 app.use('/carrito', carritoRoutes); //las rutas para los usuarios seran leidas desde localost/carrito/
-
+app.use('/tarjeta', tarjetaRoutes);//las rutas para los usuarios seran leidas desde localost/tarjeta/
 app.listen(3000);//exuchando por el pueto 3000
 

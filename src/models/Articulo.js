@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { ObjectId } = require('mongodb');
 
 const Schema = mongoose.Schema;
 
@@ -17,7 +16,7 @@ const ArticuloSchema = new Schema(
         imagen: {
             nombreArchivo: String,//nombre del archivo
             archivoUrl: String,//la ruta donde se aloja la imagen
-            fechaSubida: { type: String, default: Date.now() },//fecha de subida de la imagen
+            fechaSubida: { type: String, default: Date.now()},//fecha de subida de la imagen
         }, //base 64 de las imagenes
 
         precio: Number,

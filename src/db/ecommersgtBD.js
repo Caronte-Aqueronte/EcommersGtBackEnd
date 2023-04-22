@@ -4,7 +4,7 @@ db.createCollection("usuarios")
 db.createCollection("articulos")
 db.createCollection("carritos")
 db.createCollection("pedidos")
-db.createCollection("ventas")
+db.createCollection("tarjetas")
 
 db.usuarios.createIndex({ correoElectronico: 1 }, { unique: true });//creando un index para la coleccion usuarios
 
