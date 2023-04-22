@@ -11,6 +11,7 @@ router.post('/editarInfo', uploader, articuloController.editarInfoDeArticulo);//
 router.get('/mostrar-articulos', articuloController.mostrarArticulos);//definiendo rutas
 router.get('/mostrar-articulos-de-usuario', articuloController.mostrarArticulosDeUsuario);//definiendo rutas
 router.get('/bucarArticuloPorId', articuloController.buscarPorId);//definiendo rutas
+router.get('/bucarPorCategoria', articuloController.buscarPorCategoria);//definiendo rutas
 router.get('/mostrarNoPublicados', articuloController.mostrarArticulosSinConfirmar);//definiendo rutas
 
 module.exports = router;//exporar el routers

@@ -53,6 +53,23 @@ const buscarPorId = async (req, res) => {
 }
 
 /**
+ * Busca los articulos publicados pertenecientes a una categoria
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
+const buscarPorCategoria = async (req, res) => {
+    const categoria = req.query.categoria;//recuperar el usuario al que le interesa saber sus articulos
+    if (!categoria || categoria == "") {//el parametro existe
+        res.json(null);
+        return;
+    }
+    const articulos = await Articulo.find({ categoria: categoria, estadoPublicado:true });
+    res.json(articulos);
+}
+
+
+/**
  * Crea un articulo en la base datos a partir del body y el file del body
  * @param {*} req 
  * @param {*} res 
@@ -180,5 +197,6 @@ module.exports = {
     buscarPorId: buscarPorId,
     editarImagenDeArticulo: editarImagenDeArticulo,
     editarInfoDeArticulo: editarInfoDeArticulo,
-    mostrarArticulosSinConfirmar: mostrarArticulosSinConfirmar
+    mostrarArticulosSinConfirmar: mostrarArticulosSinConfirmar,
+    buscarPorCategoria:buscarPorCategoria
 }
