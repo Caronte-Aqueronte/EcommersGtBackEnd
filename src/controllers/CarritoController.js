@@ -40,8 +40,28 @@ const borrarDelCarrito = async (req, res) => {
     }
 }
 
+/**
+ * Elimina todo el carrito de un usuario por medio de su correo electronico
+ * @param {*} req 
+ * @param {*} res 
+ */
+const borraTodoElCarrito = async (req, res) => {
+    const usuarioCarrito = req.body.usuario;
+    //vemos si los parametros son nulos
+    if (usuarioCarrito == null || usuarioCarrito == "") {
+        res.send(null);
+        return;
+    }
+    const eliminacion = await Carrito.deleteMany({ usuario: usuarioCarrito });
+    //respondemos el estado del delete 
+    if (eliminacion) {
+        res.json({ respuesta: true });
+    } else {
+        res.json({ respuesta: false });
+    }
+}
+
 const mostrarCarritoDeUsuario = async (req, res) => {
-    //db.carritos.aggregate([{ $lookup: { from: 'articulos', localField: 'articulo_id', foreignField:'_id', as: 'articulo' } }, {$match: {usuario : 'comun2@comun'}}])
     const usuarioCarrito = req.query.usuario;
     //vemos si los parametros son nulos
     if (usuarioCarrito == null || usuarioCarrito == "") {
@@ -60,5 +80,6 @@ const mostrarCarritoDeUsuario = async (req, res) => {
 module.exports = {
     ingresarProductoACarrito: ingresarProductoACarrito,
     mostrarCarritoDeUsuario: mostrarCarritoDeUsuario,
-    borrarDelCarrito:borrarDelCarrito
+    borrarDelCarrito: borrarDelCarrito,
+    borraTodoElCarrito: borraTodoElCarrito
 }
