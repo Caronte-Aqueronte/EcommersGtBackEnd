@@ -1,4 +1,5 @@
 const Carrito = require('../models/Carrito');
+const Pedido = require('../models/Pedido');
 
 const ingresarProductoACarrito = async (req, res) => {
     const idProducto = req.body.id;
@@ -77,9 +78,53 @@ const mostrarCarritoDeUsuario = async (req, res) => {
     }
 }
 
+const pagarCarrito = async (req, res) => {
+    const usuarioCarrito = req.body;//captirar el body
+
+    if (usuarioCarrito.length <= 0) {//si el carrito esta vacio entonces retornamos falses
+        res.json({ respuesta: false });
+        return;
+    }
+
+    const articulosAVender = new Array();
+
+    var total = 0.00;
+
+    for (let x = 0; x < usuarioCarrito.length; x++) {//iteramos dentro del carrito para obtener cada uno de los articulos a vender
+        articulosAVender.push(usuarioCarrito[x].articulo[0]);
+
+        total = total + usuarioCarrito[x].articulo[0].precio;
+    }//iterar en el body
+
+
+
+    const fechaDeHoy = new Date(Date.now());
+
+
+    const usuarioComprador = usuarioCarrito[0].usuario; //identificamos el usuario comprador
+    const ganancia = total * (5 / 100);//la ganancia es igual a el total por el 5%
+    //frcha de entrega del producto
+    const fechaDeEntrega = new Date(fechaDeHoy.setDate(fechaDeHoy.getDate() + 5));
+
+
+    const pedidoGuardado = await Pedido.insertMany({
+        usuarioComprador: usuarioComprador, articulos: articulosAVender,
+        totalVenta: total, ganancia: ganancia, fechaEntrega: fechaDeEntrega
+    });
+
+    const eliminacionDeCarrito = await Carrito.deleteMany({ usuario: usuarioComprador });
+
+    if (pedidoGuardado && eliminacionDeCarrito) {
+        res.json({ respuesta: true });
+    } else {
+        res.json({ respuesta: false });
+    }
+}
+
 module.exports = {
     ingresarProductoACarrito: ingresarProductoACarrito,
     mostrarCarritoDeUsuario: mostrarCarritoDeUsuario,
     borrarDelCarrito: borrarDelCarrito,
-    borraTodoElCarrito: borraTodoElCarrito
+    borraTodoElCarrito: borraTodoElCarrito,
+    pagarCarrito: pagarCarrito
 }

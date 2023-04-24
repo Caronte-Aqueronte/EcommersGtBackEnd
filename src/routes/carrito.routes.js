@@ -12,5 +12,5 @@ router.post('/ingresarProductoACarrito', uploader, carritoController.ingresarPro
 router.post('/borrarDelCarrito', carritoController.borrarDelCarrito);//ruta para eliminar un articulo del carrito del usuario
 router.post('/borraTodoElCarrito', carritoController.borraTodoElCarrito);//ruta para eliminar todo el carrito de un usuario
 router.get('/mostrarCarritoDeUsuario', carritoController.mostrarCarritoDeUsuario);//ruta para mostrar el carrido de un usuario
-
+router.post('/pagarCarrito', carritoController.pagarCarrito);//ruta para mostrar el carrido de un usuario
 module.exports = router;//exporar el routers
