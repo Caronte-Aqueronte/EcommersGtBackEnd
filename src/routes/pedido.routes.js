@@ -1,9 +1,12 @@
 const express = require('express');
-const articuloController = require("../controllers/PedidoController");
+const pedidosController = require("../controllers/PedidoController");
 const router = express.Router();
 
 
 
-router.get('/mostrarPedidos', articuloController.mostrarPedidos);//definiendo rutas
+router.get('/mostrarPedidos', pedidosController.mostrarPedidos);//definiendo rutas
+router.post('/entregarPedido', pedidosController.entregarPedido)
+router.get('/mostrarPedidosPendientes', pedidosController.mostrarPedidosPendientes);//definiendo rutas
+router.get('/buscarPedidoPorId', pedidosController.buscarPedidoPorId);
 
 module.exports = router;//exporar el routers

@@ -1,5 +1,11 @@
 const Pedido = require('../models/Pedido');
 
+/**
+ * Busca todos los pedidos de un usuario y lo envia
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
 const mostrarPedidos = async (req, res) => {
     const usuario = req.query.usuario;//estraer el usuario
     if (!usuario || usuario == "") {//si los parametros estan vacios o nulos devolvemos null
@@ -11,6 +17,63 @@ const mostrarPedidos = async (req, res) => {
 
     res.json(pedidosDeUsuario);
 }
+
+/**
+ * Busca todos los pedidos que estan en curso y los envia
+ * @param {*} req 
+ * @param {*} res 
+ */
+const mostrarPedidosPendientes = async (req,res) =>{
+    const pedidosPendientes = await Pedido.find({ estadoEntrega: "En curso" });//mandar a buscae los pedidos pendientes
+    res.json(pedidosPendientes);
+}
+
+/**
+ * Cambia el estado de un pedido a Entregado
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
+const entregarPedido = async(req,res) => {
+    const pedido = req.body;
+    if(pedido == null){
+        res.json({respuesta:false});
+        return;
+    }
+
+    const pedidoActualizado = await Pedido.findByIdAndUpdate({ _id: pedido._id }, {estadoEntrega: "Entregado"});
+
+    if(pedidoActualizado){
+        res.json({respuesta:true});
+    }else{
+        res.json({respuesta:false});
+    }
+}
+
+/**
+ * Cambia el estado de un pedido a Entregado
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
+const buscarPedidoPorId = async(req,res) => {
+    const id = req.query.id;
+    if(id == null || id == ""){
+        res.send(null);
+        return;
+    }
+
+    const pedido = await Pedido.findById({_id: id });
+
+    if(pedido){
+        res.json(pedido);
+    }else{
+        res.json(pedido);
+    }
+}
 module.exports = {
-    mostrarPedidos: mostrarPedidos
+    mostrarPedidos: mostrarPedidos,
+    mostrarPedidosPendientes:mostrarPedidosPendientes,
+    entregarPedido:entregarPedido,
+    buscarPedidoPorId:buscarPedidoPorId
 }
