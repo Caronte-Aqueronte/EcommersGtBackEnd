@@ -13,5 +13,6 @@ router.get('/mostrar-articulos-de-usuario', articuloController.mostrarArticulosD
 router.get('/bucarArticuloPorId', articuloController.buscarPorId);//definiendo rutas
 router.get('/bucarPorCategoria', articuloController.buscarPorCategoria);//definiendo rutas
 router.get('/mostrarNoPublicados', articuloController.mostrarArticulosSinConfirmar);//definiendo rutas
+router.post('/publicarArticulo', articuloController.publicarArticulo);
 
 module.exports = router;//exporar el routers

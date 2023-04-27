@@ -16,7 +16,7 @@ const mostrarArticulos = async (req, res) => {
  * @param {*} res 
  */
 const mostrarArticulosSinConfirmar = async (req, res) => {
-    const articulos = await Articulo.find({ estadoPublicado: true });
+    const articulos = await Articulo.find({ estadoPublicado: false });
     res.json(articulos);
 }
 
@@ -189,6 +189,29 @@ const editarImagenDeArticulo = async (req, res) => {
     }
 }
 
+const publicarArticulo = async (req, res) =>{
+    const id = req.body.id;
+
+    if(id == null || id == ""){
+        res.send(null);
+        return;
+    }
+
+    const update = await Articulo.findByIdAndUpdate({ _id: id },
+        {
+            $set: {
+                estadoPublicado: true
+            }
+        }
+    );
+
+    if(update){
+        res.json({respuesta: true});
+    }else{
+        res.json({respuesta: false});
+    }
+}
+
 
 module.exports = {
     mostrarArticulos: mostrarArticulos,
@@ -198,5 +221,6 @@ module.exports = {
     editarImagenDeArticulo: editarImagenDeArticulo,
     editarInfoDeArticulo: editarInfoDeArticulo,
     mostrarArticulosSinConfirmar: mostrarArticulosSinConfirmar,
-    buscarPorCategoria:buscarPorCategoria
+    buscarPorCategoria:buscarPorCategoria,
+    publicarArticulo:publicarArticulo
 }
