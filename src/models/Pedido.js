@@ -14,9 +14,9 @@ const PedidoSchema = new Schema(
         //datos para la venta
         totalVenta: Number,
         ganancia: Number,
-        fechaDeLaVenta: {type:Date, default: new Date(Date.now())},
+        fechaDeLaVenta: {type:String, default: new Date(Date.now()).toISOString().slice(0,10)},
         //datos para el pedido
-        fechaEntrega: Date, //fecha en que se entregara el pedido
+        fechaEntrega: String, //fecha en que se entregara el pedido
         estadoEntrega: { type: String, default: "En curso" }//el estado de la entrega de un pedido
     }
 );

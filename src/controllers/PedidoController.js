@@ -71,9 +71,33 @@ const buscarPedidoPorId = async(req,res) => {
         res.json(pedido);
     }
 }
+
+/**
+ * Cambia la fecha de un pedido
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
+const editarInfoDeUnPedido = async(req,res) => {
+    const id = req.body.id;//obtene rel id delmpedido
+    const nuevaFecha = req.body.nuevaFecha;//obtener la nueva fecha
+    if(id == null || id == "" || nuevaFecha == null || nuevaFecha == ""){
+        res.send(null);
+        return;
+    }
+
+    const edicionPedido = await Pedido.findByIdAndUpdate({_id: id }, {fechaEntrega: nuevaFecha});
+
+    if(edicionPedido){
+        res.json({respuesta : true});
+    }else{
+        res.json({respuesta : false});
+    }
+}
 module.exports = {
     mostrarPedidos: mostrarPedidos,
     mostrarPedidosPendientes:mostrarPedidosPendientes,
     entregarPedido:entregarPedido,
-    buscarPedidoPorId:buscarPedidoPorId
+    buscarPedidoPorId:buscarPedidoPorId,
+    editarInfoDeUnPedido:editarInfoDeUnPedido
 }

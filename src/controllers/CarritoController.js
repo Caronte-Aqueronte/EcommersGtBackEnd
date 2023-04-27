@@ -104,7 +104,7 @@ const pagarCarrito = async (req, res) => {
     const usuarioComprador = usuarioCarrito[0].usuario; //identificamos el usuario comprador
     const ganancia = total * (5 / 100);//la ganancia es igual a el total por el 5%
     //frcha de entrega del producto
-    const fechaDeEntrega = new Date(fechaDeHoy.setDate(fechaDeHoy.getDate() + 5));
+    const fechaDeEntrega = new Date(fechaDeHoy.setDate(fechaDeHoy.getDate() + 5)).toISOString().slice(0,10);
 
 
     const pedidoGuardado = await Pedido.insertMany({
