@@ -1,5 +1,6 @@
 const Carrito = require('../models/Carrito');
 const Pedido = require('../models/Pedido');
+const moment = require('moment');
 
 const ingresarProductoACarrito = async (req, res) => {
     const idProducto = req.body.id;
@@ -97,14 +98,10 @@ const pagarCarrito = async (req, res) => {
     }//iterar en el body
 
 
-
-    const fechaDeHoy = new Date(Date.now());
-
-
     const usuarioComprador = usuarioCarrito[0].usuario; //identificamos el usuario comprador
-    const ganancia = total * (5 / 100);//la ganancia es igual a el total por el 5%
+    const ganancia = (total * (5 / 100)).toFixed(2);//la ganancia es igual a el total por el 5%
     //frcha de entrega del producto
-    const fechaDeEntrega = new Date(fechaDeHoy.setDate(fechaDeHoy.getDate() + 5)).toISOString().slice(0,10);
+    const fechaDeEntrega = moment().add(5).format("YYYY-MM-DD");
 
 
     const pedidoGuardado = await Pedido.insertMany({

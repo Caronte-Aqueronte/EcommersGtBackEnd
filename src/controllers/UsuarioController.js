@@ -48,16 +48,24 @@ const crearUsuario = async (req, res) => {
     }
     req.body.rol = 'Comun';//seteamos el rol como comun
     req.body.password = createHash.createHash('sha256').update(req.body.password).digest('hex');//seteamos la contra como una encriptada
-    const insercion = await Usuario.insertMany(req.body);//mandamos a guardar al usuario en la db
-    if (insercion) {//si todo fue bien tonces revolvemos true
-        res.json({
-            respuesta: true
-        });
-    } else {
+    try{
+        const insercion = await Usuario.insertMany(req.body);//mandamos a guardar al usuario en la db
+        if (insercion) {//si todo fue bien tonces revolvemos true
+            res.json({
+                respuesta: true
+            });
+        } else {
+            res.json({
+                respuesta: false//si fue mal entonces devolver false
+            });
+        }
+    }catch(MongoBulkWriteError){
         res.json({
             respuesta: false//si fue mal entonces devolver false
         });
     }
+
+
 }
 
 const crearUsuarioAdminOPaqueteria = async (req, res) => {
@@ -69,16 +77,24 @@ const crearUsuarioAdminOPaqueteria = async (req, res) => {
         return;
     }
     req.body.password = createHash.createHash('sha256').update(req.body.password).digest('hex');//seteamos la contra como una encriptada
-    const insercion = await Usuario.insertMany(req.body);//mandamos a guardar al usuario en la db
-    if (insercion) {//si todo fue bien tonces revolvemos true
-        res.json({
-            respuesta: true
-        });
-    } else {
+    
+    try {
+        const insercion = await Usuario.insertMany(req.body);//mandamos a guardar al usuario en la db
+        if (insercion) {//si todo fue bien tonces revolvemos true
+            res.json({
+                respuesta: true
+            });
+        } else {
+            res.json({
+                respuesta: false//si fue mal entonces devolver false
+            });
+        }
+    } catch (MongoBulkWriteError) {
         res.json({
             respuesta: false//si fue mal entonces devolver false
         });
     }
+
 }
 
 const mostarUsuariosAdminYPqueteria = async (req, res) => {

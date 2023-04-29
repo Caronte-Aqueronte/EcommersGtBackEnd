@@ -77,6 +77,8 @@ const buscarPorCategoria = async (req, res) => {
  */
 const crearArticulo = async (req, res) => {
     const { body, file } = req;
+    
+    const precioFormat = ((Number)(body.precio)).toFixed(2);
     //validar si hay body y un file
     if (file && body) {
         //crear un nuevo Articulo a partir del body
@@ -88,7 +90,7 @@ const crearArticulo = async (req, res) => {
                 nombreArchivo: file.filename,
                 archivoUrl: `http://localhost:3000/${file.filename}`
             },
-            precio: body.precio,
+            precio: precioFormat,
             categoria: body.categoria,
 
         });
